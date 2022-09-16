@@ -1,5 +1,9 @@
+<script lang="ts">
+    export let blogSectionTitle: string;
+</script>
+
 <section>
-	<h2>Latest Blogs</h2>
+	<h2>{blogSectionTitle}</h2>
 	<slot />
 </section>
 

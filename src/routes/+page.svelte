@@ -5,7 +5,7 @@
 </script>
 
 <Hero />
-<BlogSection>
+<BlogSection blogSectionTitle="Latest Posts">
 	<BlogCard
 		blogPostTitle="YourBrandHub"
 		blogPostDescription="description of yourbrandhub"

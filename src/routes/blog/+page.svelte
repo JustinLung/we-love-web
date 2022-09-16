@@ -1,9 +1,12 @@
-<section>
-	<h2>Blogposts</h2>
-</section>
+<script lang="ts">
+	import BlogCard from '$lib/components/BlogCard.svelte';
+	import BlogSection from '$lib/components/BlogSection.svelte';
+</script>
 
-<style>
-    section {
-        padding: 0 1.2rem;
-    }
-</style>
+<BlogSection blogSectionTitle="Blog Posts">
+	<BlogCard
+		blogPostTitle="YourBrandHub"
+		blogPostDescription="description of yourbrandhub"
+		blogLink="/"
+	/>
+</BlogSection>
