@@ -1,4 +1,5 @@
 <script ts="lang">
-    import '../styles/style.css'
-    import '../styles/theme.css'
+	import Hero from '$lib/components/Hero.svelte';
 </script>
+
+<Hero />
