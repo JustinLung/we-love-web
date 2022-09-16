@@ -4,16 +4,18 @@
 	export let blogLink: string;
 </script>
 
-<article>
-	<div>
-		<img src="/assets/images/yourbrandhub.png" alt="YourBrandHub" />
-	</div>
-	<div>
-		<h3>{blogPostTitle}</h3>
-		<p>{blogPostDescription}</p>
-		<a href={blogLink}>Read more</a>
-	</div>
-</article>
+<a href={blogLink}>
+	<article>
+		<div>
+			<img src="/assets/images/yourbrandhub.png" alt="YourBrandHub" />
+		</div>
+		<div>
+			<h3>{blogPostTitle}</h3>
+			<p>{blogPostDescription}</p>
+			<a href={blogLink}>Read more</a>
+		</div>
+	</article>
+</a>
 
 <style>
 	article {
@@ -38,6 +40,7 @@
 	}
 
 	a {
+		text-decoration: none;
 		color: var(--color-muave-light);
 	}
 
