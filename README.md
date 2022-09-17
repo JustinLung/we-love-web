@@ -9,7 +9,7 @@
   * [Licentie](#licentie)
 
 ## 📃 Beschrijving
-Dit is de repo voor mijn We❤️Web Blog gemaakt met Sveltekit & Prismic.io]
+Dit is de repo voor mijn We❤️Web Blog gemaakt met Sveltekit & Prismic.io
 
 ## 🔮 Kenmerken
 * 📙 HTML
