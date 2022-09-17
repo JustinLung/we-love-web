@@ -18,8 +18,14 @@
 		text-align: center;
 	}
 	h2 {
-        margin-top: 0;
+        margin: 0;
 		padding: 0 1.2rem;
+		font-size: 2rem;
+	}
+
+	p {
+		font-size: 1.2rem;
+		font-style: italic;
 	}
 
     img {
@@ -28,6 +34,14 @@
     }
 
 	@media(max-width: 50rem) {
+
+		h2 {
+			font-size: 1.5rem;
+		}
+
+		p {
+			font-size: 1.2rem;
+		}
 		img {
 			border-radius: 0;
 		}
