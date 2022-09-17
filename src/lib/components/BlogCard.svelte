@@ -1,4 +1,6 @@
 <script lang="ts">
+	import placeholder from '$lib/assets/images/placeholder.png';
+
 	export let blogPostTitle: string;
 	export let blogPostDescription: string;
 	export let blogLink: string;
@@ -8,7 +10,7 @@
 <a href={blogLink}>
 	<article>
 		<div>
-			<img src={blogImage} alt="{blogPostTitle} Image"/>
+			<img src={blogImage} on:error={() => (blogImage = placeholder)} alt="{blogPostTitle} Image" />
 		</div>
 		<div>
 			<h3>{blogPostTitle}</h3>
