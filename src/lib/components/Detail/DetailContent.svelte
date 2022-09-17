@@ -5,7 +5,16 @@
 <p>{blogContent}</p>
 
 <style>
-    p {
-        padding: 1.2rem;
+	p {
+		padding: 1.2rem;
+        max-width: 60rem;
+        margin: 0 auto;
+        font-size: 1.2rem;
+	}
+
+    @media(max-width: 55rem) {
+        p {
+            font-size: 1rem;
+        }
     }
 </style>

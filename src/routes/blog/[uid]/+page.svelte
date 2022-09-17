@@ -4,8 +4,8 @@
 	import type { PageData } from './$types';
 
 	export let data: PageData;
-	const {title, image, content} = data.document
+	const {title, image, description, content} = data.document
 </script>
 
-<DetailHero blogTitle={title} blogImage={image.url} />
+<DetailHero blogTitle={title} blogDescription={description} blogImage={image.url} />
 <DetailContent blogContent={content} />
