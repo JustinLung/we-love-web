@@ -8,5 +8,5 @@
 	const {title, image, content} = data.document
 </script>
 
-<DetailHero blogTitle="{title}" blogImage={image.url} />
+<DetailHero blogTitle={title} blogImage={image.url} />
 <DetailContent blogContent={content} />
