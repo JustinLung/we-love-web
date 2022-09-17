@@ -1,50 +1,55 @@
 <script lang="ts">
-	import { goto } from "$app/navigation";
+	import { goto } from '$app/navigation';
 
-    function navigate() {
-        goto('/blog')
-    }
+	function navigate() {
+		goto('/blog');
+	}
 </script>
 
 <section>
-	<h2>Sharing the most intressting content about the web on this blog</h2>
-	<p>
-		In this blog I'm going to write about the things that I've encountered as a frontend developer.
-	</p>
-    <button on:click={navigate}>Blogs</button>
+	<h2>Always hungry for new knowledge.</h2>
+	<div>
+		<p>Find articles and stories about the fundementals and my experiences about the web.</p>
+		<button on:click={navigate}>Read More</button>
+	</div>
 </section>
 
 <style>
-    h2 {
-        font-size: 1.5rem;
-        margin: 0;
-    }
+	section {
+		padding: 2rem 1.2rem;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		max-width: 60rem;
+		margin: 0 auto;
+		height: 15rem;
+	}
 
-    p {
-        font-size: 1.2rem;
-        margin: 0;
-    }
+	h2 {
+		margin: 0;
+		font-size: 3rem;
+		max-width: 30rem;
+	}
+	p {
+		margin: 0;
+		font-size: 1.2rem;
+		max-width: 30rem;
+	}
 
-    section {
-        padding: 3rem 1rem;
-        background: var(--color-light-blue);
-    }
+	button {
+		all: unset;
+		background-color: var(--color-light-blue);
+		color: var(--color-white);
+		padding: .5rem 1rem;
+		font-size: 1.2rem;
+		border-radius: .3rem;
+		margin-top: .5rem;
+	}
 
-    button {
-        all: unset;
-        background-color: var(--color-white);
-        border-radius: .3rem;
-        padding: .5rem 2rem;
-        margin-top: .5rem;
-    }
-
-    @media(min-width: 40rem) {
-        section {
-            height: 25rem;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-    }
+	@media(max-width: 50rem) {
+		section {
+			flex-direction: column;
+			align-items: flex-start;
+		}
+	}
 </style>

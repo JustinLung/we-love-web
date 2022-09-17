@@ -51,4 +51,10 @@
 	p {
 		margin: 0;
 	}
+
+	@media (max-width: 55rem) {
+		article {
+			width: 90vw;
+		}
+	}
 </style>

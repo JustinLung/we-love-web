@@ -13,6 +13,8 @@
         justify-content: space-between;
         align-items: center;
         padding: 1rem 1.2rem;
+        max-width: 60rem;
+		margin: 0 auto;
     }
 
     h1 {
@@ -30,12 +32,5 @@
         justify-content: center;
         align-items: center;
         gap: 1rem;
-    }
-
-    @media (min-width: 40rem) {
-        header{
-            justify-content: center;
-            gap: 2rem;
-        }
     }
 </style>
