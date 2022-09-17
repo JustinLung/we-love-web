@@ -37,4 +37,14 @@
         padding: .5rem 2rem;
         margin-top: .5rem;
     }
+
+    @media(min-width: 40rem) {
+        section {
+            height: 25rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
 </style>

@@ -2,12 +2,13 @@
 	export let blogPostTitle: string;
 	export let blogPostDescription: string;
 	export let blogLink: string;
+	export let blogImage: string;
 </script>
 
 <a href={blogLink}>
 	<article>
 		<div>
-			<img src="/assets/images/yourbrandhub.png" alt="YourBrandHub" />
+			<img src={blogImage} alt="{blogPostTitle} Image"/>
 		</div>
 		<div>
 			<h3>{blogPostTitle}</h3>
