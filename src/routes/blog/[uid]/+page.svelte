@@ -4,7 +4,6 @@
 	import type { PageData } from './$types';
 
 	export let data: PageData;
-
 	const {title, image, content} = data.document
 </script>
 

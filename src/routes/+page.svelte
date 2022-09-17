@@ -2,9 +2,8 @@
 	import Hero from '$lib/components/Hero.svelte';
 	import BlogCard from '$lib/components/BlogCard.svelte';
 	import BlogSection from '$lib/components/BlogSection.svelte';
-	import type { PageData } from './$types';
 
-	export let data: PageData;
+	export let data: any;
 </script>
 
 <Hero />
