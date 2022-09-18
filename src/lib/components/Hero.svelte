@@ -65,6 +65,15 @@
 		section {
 			flex-direction: column;
 			align-items: flex-start;
+			height: 10rem;
+		}
+		h2 {
+			font-size: 2rem;
+		}
+
+		p,
+		button {
+			font-size: 1rem;
 		}
 	}
 </style>
