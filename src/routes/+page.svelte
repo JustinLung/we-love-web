@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Hero from '$lib/components/Hero.svelte';
-	import BlogCard from '$lib/components/BlogCard.svelte';
+	import BlogCard from '$lib/components/Blog/BlogCard.svelte';
 	import BlogSection from '$lib/components/BlogSection.svelte';
 
 	export let data: any;
