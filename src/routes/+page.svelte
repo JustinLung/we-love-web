@@ -8,7 +8,14 @@
 
 <Hero />
 <BlogSection blogSectionTitle="Latest Posts">
-	{#each data.documents as data}
-		<BlogCard blogPostTitle={data.data.title} blogPostDescription={data.data.description} blogImage={data.data.image.url} blogLink="/blog/{data.uid}"/>
-	{/each}
+	{#if data && Object.keys(data).length}
+		{#each data.documents as data}
+			<BlogCard
+				blogPostTitle={data.data.title}
+				blogPostDescription={data.data.description}
+				blogImage={data.data.image.url}
+				blogLink="/blog/{data.uid}"
+			/>
+		{/each}
+	{/if}
 </BlogSection>
