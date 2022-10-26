@@ -21,7 +21,7 @@
 
 <style>
 	article {
-		max-width: 30rem;
+		width: 25rem;
 		height: 22rem;
 		border-radius: 0.3rem;
 		overflow: hidden;
@@ -30,7 +30,6 @@
 
 	.image-container {
 		height: 15rem;
-		width: 30rem;
 	}
 
 	img {
@@ -46,5 +45,12 @@
 	h2 {
 		font-weight: bold;
 		font-size: 1.5rem;
+	}
+
+	@media (max-width: 50rem) {
+		article {
+			width: 20rem;
+			height: 25rem;
+		}
 	}
 </style>
