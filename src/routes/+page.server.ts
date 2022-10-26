@@ -9,6 +9,9 @@ export const load: PageServerLoad = async () => {
                     slug
                     title
                     description
+                    createdBy {
+                        name
+                    }
                     image {
                         url
                     }

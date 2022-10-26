@@ -9,6 +9,7 @@
 </header>
 <section>
 	<img src={data.image.url} alt={data.title} />
+	<span>Door: {data.createdBy.name}</span>
 	<h1>{data.title}</h1>
 	<p>{data.description}</p>
 	<div>
@@ -36,6 +37,7 @@
 	img {
 		width: 100%;
 		border-radius: 0.5rem;
+		margin-bottom: 1rem;
 	}
 
 	p {
@@ -43,7 +45,6 @@
 		margin: 1rem 0;
 		font-weight: 1.2rem;
 	}
-
 	div {
 		display: flex;
 		flex-direction: column;

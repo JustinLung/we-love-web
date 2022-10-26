@@ -1,6 +1,6 @@
 <section>
 	<h1>We Love Web - Blog</h1>
-	<p>Leuke blog verhaaltjes van Justin!</p>
+	<p>Leuke blog verhaaltjes over het web van Justin!</p>
 	<div>
 		<slot />
 	</div>
@@ -15,12 +15,12 @@
 	h1 {
 		font-size: 2rem;
 		text-align: center;
-		margin-top: 1rem;
+		margin-top: 2.5rem;
 	}
 
 	p {
 		text-align: center;
-		margin-bottom: 1rem;
+		margin-bottom: 2.5rem;
 		font-size: 1.2rem;
 	}
 

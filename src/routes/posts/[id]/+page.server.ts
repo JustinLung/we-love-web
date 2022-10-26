@@ -8,6 +8,9 @@ export const load: PageServerLoad = async ({ params }) => {
     slug
     title
     description
+    createdBy {
+        name
+    }
     content {
         html
     }

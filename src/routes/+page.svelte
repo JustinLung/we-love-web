@@ -10,6 +10,7 @@
 <BlogSection>
 	{#each data.posts as posts}
 		<BlogCard
+			blogWriter={posts.createdBy.name}
 			blogLink="/posts/{posts.id}"
 			blogTitle={posts.title}
 			blogDescription={posts.description}
