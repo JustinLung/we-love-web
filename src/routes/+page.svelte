@@ -1,21 +1,19 @@
 <script lang="ts">
-	import Hero from '$lib/components/Hero.svelte';
-	import BlogCard from '$lib/components/Blog/BlogCard.svelte';
+	import BlogCard from '$lib/components/BlogCard.svelte';
 	import BlogSection from '$lib/components/BlogSection.svelte';
+	import type { PageData } from './$types';
 
-	export let data: any;
+	export let data: PageData;
+	console.log(data);
 </script>
 
-<Hero />
-<BlogSection blogSectionTitle="Latest Posts">
-	{#if data && Object.keys(data).length}
-		{#each data.documents as data}
-			<BlogCard
-				blogPostTitle={data.data.title}
-				blogPostDescription={data.data.description}
-				blogImage={data.data.image.url}
-				blogLink="/blog/{data.uid}"
-			/>
-		{/each}
-	{/if}
+<BlogSection>
+	{#each data.posts as posts}
+		<BlogCard
+			blogLink="/posts/{posts.id}"
+			blogTitle={posts.title}
+			blogDescription={posts.description}
+			blogImage={posts.image.url}
+		/>
+	{/each}
 </BlogSection>
