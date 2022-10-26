@@ -20,7 +20,5 @@ export const load: PageServerLoad = async ({ params }) => {
 }
 `;
 	const data = await client({ query, variables: { id: params.id }, fetch: fetch });
-	console.log(data);
-
 	return { ...data.post };
 };
