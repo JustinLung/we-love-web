@@ -1,21 +1,24 @@
 <script lang="ts">
+	import PageTransition from '$lib/components/PageTransition.svelte';
 	import type { PageData } from './$types';
 
 	export let data: PageData;
 </script>
 
-<header>
-	<a href="/">Return Home</a>
-</header>
-<section>
-	<img src={data.image.url} alt={data.title} />
-	<span>Door: {data.createdBy.name}</span>
-	<h1>{data.title}</h1>
-	<p>{data.description}</p>
-	<div>
-		{@html data.content.html}
-	</div>
-</section>
+<PageTransition>
+	<header>
+		<a href="/">Return Home</a>
+	</header>
+	<section>
+		<img src={data.image.url} alt={data.title} />
+		<span>Door: {data.createdBy.name}</span>
+		<h1>{data.title}</h1>
+		<p>{data.description}</p>
+		<div>
+			{@html data.content.html}
+		</div>
+	</section>
+</PageTransition>
 
 <style>
 	header {

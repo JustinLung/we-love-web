@@ -6,7 +6,6 @@ export const load: PageServerLoad = async () => {
             query Posts {
                 posts {
                     id
-                    slug
                     title
                     description
                     createdBy {

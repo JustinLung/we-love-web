@@ -5,7 +5,6 @@ export const load: PageServerLoad = async ({ params }) => {
 	const query = `
             query Post($id: ID) {
   post(where: {id: $id}) {
-    slug
     title
     description
     createdBy {
