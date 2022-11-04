@@ -15,3 +15,13 @@ a {
 	color: var(--color-white);
 	text-decoration: none;
 }
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style-position: inside;
+}
+
+ul>li div {
+	display: inline;
+}
