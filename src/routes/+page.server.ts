@@ -4,7 +4,7 @@ import { client } from '$lib/vendors/utils';
 export const load: PageServerLoad = async () => {
 	const query = `
             query Posts {
-                posts {
+                posts(orderBy: createdAt_DESC) {
                     id
                     title
                     description
