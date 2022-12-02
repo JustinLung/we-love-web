@@ -11,21 +11,30 @@
 		<div class="image-container">
 			<img src={blogImage} alt={blogTitle} />
 		</div>
-		<div>
+		<div class="content">
 			<p>Door: {blogWriter}</p>
 			<h2>{blogTitle}</h2>
 			<p>{blogDescription}</p>
 		</div>
+		<a href={blogLink} class="cta">Lees meer</a>
 	</article>
 </a>
 
 <style>
 	article {
 		width: 25rem;
-		height: 22rem;
+		height: 24rem;
 		border-radius: 0.3rem;
 		overflow: hidden;
 		background-color: var(--color-green);
+		border: 1px solid var(--color-green);
+		transition: 0.3s ease;
+	}
+
+	article:hover,
+	article:focus {
+		background-color: transparent;
+		border: 1px solid var(--color-green);
 	}
 
 	.image-container {
@@ -38,8 +47,20 @@
 		object-fit: cover;
 	}
 
-	div:last-child {
-		padding: 1rem;
+	.content {
+		padding: 0.5rem 1rem;
+	}
+
+	article:hover .cta,
+	article:focus .cta {
+		background-color: var(--color-green);
+	}
+
+	.cta {
+		background-color: var(--color-dark);
+		padding: 0.2rem 1rem;
+		border-radius: 0.2rem;
+		margin-left: 1rem;
 	}
 
 	h2 {
